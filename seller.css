@@ -1,0 +1,412 @@
+:root{
+  --purple :#674188;
+  --lightpurple : #c3acd0;
+  --beige : #F7EFE5;
+  --lightbeige: #FFFBF5;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 900px;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 5%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.logo{
+  width: 115px;
+  height: 75px;
+  margin-right: 18px;
+}
+.search-bar input{
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  width:200px;
+  height: 35px;
+}
+.search-bar{
+  border-bottom: 2px solid var(--lightpurple);
+}
+::-webkit-input-placeholder{
+  color: var(--lightpurple);
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap : 60px;
+}
+.add-icon{
+  margin-right:15px;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+li{
+  list-style: none;
+}
+.hamburger{
+  cursor: pointer;
+  margin-left: 15px;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease-in-out ;
+  transition:all 0.3s ease-in-out ;
+  background-color: var(--lightpurple);
+
+}
+.hamburger.active .bar:nth-child(2){
+opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+.ham-list{
+  position: fixed;
+  left: -100%;
+  top: 60px;
+  gap: 0;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border-right: 1px solid var(--lightpurple);
+  background-color:white;
+}
+.ham-list.active{
+  left : 0;
+}
+.ham-list li{
+  margin-bottom: 5px;
+}
+.bold-li{
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--purple);
+}
+.ham-list li a{
+  text-decoration: none;
+  color: grey;
+  display: block;
+  transition: 0.3s ease;
+}
+.ham-list li a:hover{
+  background: var(--lightpurple);
+  color: white;
+}
+.add-icon{
+  margin-right: 15px;
+}
+.shopping-bag {
+  margin-right: 50px;
+}
+.shopping-bag i {
+  margin-left: 15px;
+}
+.section-1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.section-1 div:nth-child(2){
+  background-color: var(--lightpurple);
+}
+
+.random{
+  width: 550px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  left: 31%;
+}
+.big-logo{
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 100px;
+  left: 258px;
+}
+.heading{
+  font-family: 'Frank Ruhl Libre';
+  font-size: 25px;
+  line-height: 83px;
+  color: #000000;
+  text-align: center;
+}
+.container{
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 65px;
+
+}
+.container .wrapper{
+  width: calc(33% - 13px);
+  border-radius: 3px;
+  background: #F7EFE5;
+  transition: all 0.3 ease;
+}
+.container .wrapper img{
+  width: 400px;
+  height: 400px;
+  margin-left: 26px;
+  border-radius: 3px;
+
+  
+}
+.container .wrapper .content p{
+  color: #674188;
+  font-family: 'Lato';
+font-style: normal;
+font-size: 15px;
+font-weight: 700;
+
+}
+.wrapper .row{
+  padding: 10px 20px 22px 20px ;
+}
+.row .button{
+  margin-top: 19px;
+  display: flex;
+}
+.row .button #button {
+  width: 60%;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border: 2px solid #674188;
+  background: #F7EFE5;
+  color: #674188;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 70px ;
+  font-weight: 700;
+}
+.statistics{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.statistics .left-container{
+  width:500px;
+  height: 610px;
+  border-radius: 3px;
+  background: #C3ACD0;
+  transition: all 0.3 ease;
+}
+.statistics .left-container .left-box .title #titre{
+  font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 900;
+font-size: 55px;
+line-height: 60px;
+text-align: justify;
+color: #F7EFE5;
+margin-left: 55px;
+
+}
+.statistics .left-container .left-box .title p{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: justify;
+margin-left: 55px;
+
+width: 649px;
+height: 145px;
+
+
+color: #000000;
+
+}
+.statistics .left-container .left-box .title #button1{
+  width: 40%;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border: 2px solid #674188;
+  background: #674188;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 70px ;
+  font-weight: 700;
+}
+
+ .statistics img{
+  width: 1019px;
+  height: 610px;
+ }
+
+.container-reviews{
+  text-align: center;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between ;
+  margin-left: 65px;
+}
+.container-reviews .big-box{
+  width: calc(33% - 13px);
+  border-radius: 3px;
+  background: #ffffff;
+  transition: all 0.3 ease;
+}
+
+.container-reviews .big-box .box{
+  width: 100%;
+  height: 460px;
+  border-radius: 3px;
+  background: #F7EFE5;
+  transition: all 0.3 ease;
+  align-items: center;
+}
+.container-reviews .big-box .box .reviews{
+  margin-top: 50px;
+  color: #FFC806;
+  align-items: center;
+  font-size:45px;
+}
+.container-reviews .big-box .box .testimonials img{
+  width: 60%;
+}
+
+.container-reviews .big-box .box .profile img{
+  width: 20%;
+  left: ;
+}
+.box .row{
+  padding: 10px 20px 22px 20px ;
+}
+.row .button{
+  margin-top: 1px;
+  display: flex;
+}
+.row .button button{
+  width: 60%;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border: 2px solid #674188;
+  background: #ffffff;
+  color: #674188;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 70px ;
+  font-weight: 700;
+}
+
+.container-products{
+  text-align: center;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between ;
+  margin-left: 65px;
+}
+.container-products .box-products{
+  width: 23%;
+  height: 390px;
+  border-radius: 3px;
+  background: #F7EFE5;
+  transition: all 0.3 ease;
+  align-items: center;
+}
+.container-products .box-products img{
+  width: 320px;
+  height: 300px;
+}
+.container-products .box-products .rating{
+  color: #FFC806;
+  align-items: center;
+}
+.container-products .box-products .span-1{
+  margin-right: 5px;
+  color: grey;
+  text-decoration: line-through;
+}
+.container-products .box-products .span-2{
+  font-weight: bold;
+}
+.view-all a{
+  color: #C3ACD0;
+  font-size: 30px;
+  margin-left: 700px;
+  font-family: 'Frank Ruhl Libre';
+}
+
+footer {
+  height: 550px;
+  width: 100%;
+  background-color: var(--purple);
+  position: relative;
+}
+.footer-pictures {
+  display: grid;
+  width: 100%;
+  height: 50%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-pictures div img{
+  max-width: 100%;
+  height: 100%;
+}
+.follow-us {
+  width: 30%;
+  height: 75px;
+  background-color: var(--beige);
+  padding: 15px;
+  position: absolute;
+  left: 525px;
+  top: 45%;
+}
+.follow-us h1 {
+  display: inline-block;
+  margin-right: 100px;
+  color: var(--purple);
+}
+
+footer p{
+  color: var(--beige);
+  position: absolute;
+  left: 42%;
+  bottom: 8%;
+  font-size: larger;
+  font-family: 'Lato';
+  line-height: 29px;
+}
+
+
+
+Écrire à Rayen Neji
